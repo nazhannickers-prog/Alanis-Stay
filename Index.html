@@ -1,0 +1,10 @@
+function kiraDanHantarWhatsApp(jumlahMalam) {
+    let kadarSemalam = 250;
+    let jumlahHarga = jumlahMalam * kadarSemalam;
+
+    let nomborTelefon = "60108233774"; // Ganti dengan nombor WhatsApp anda
+    let mesej = `Hai Alanis Stay, saya ingin menempah homestay untuk ${jumlahMalam} malam. Anggaran harga adalah RM${jumlahHarga}. Mohon semak kekosongan.`;
+
+    let urlWhatsApp = `https://wa.me/${nomborTelefon}?text=${encodeURIComponent(mesej)}`;
+    window.open(urlWhatsApp, '_blank');
+}
